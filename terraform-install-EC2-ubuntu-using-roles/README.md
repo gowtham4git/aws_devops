@@ -1,5 +1,5 @@
 
-# 🚀 Automating Terraform Installation and Configuration on Ubuntu EC2 Server 🚀
+#  Automating Terraform Installation and Configuration on Ubuntu EC2 Server 
 
 ## Introduction
 
