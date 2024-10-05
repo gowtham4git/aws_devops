@@ -22,6 +22,7 @@ terraform -v
 # Configure IAM role permissions
 ROLE_NAME="my-tf-server-role"
 aws iam create-role --role-name $ROLE_NAME --assume-role-policy-document file://trust-policy.json
+
 aws iam attach-role-policy --role-name $ROLE_NAME --policy-arn arn:aws:iam::aws:policy/AmazonEC2FullAccess
 aws iam attach-role-policy --role-name $ROLE_NAME --policy-arn arn:aws:iam::aws:policy/service-role/AmazonEC2RoleforAWSCodeDeployLimited
 aws iam attach-role-policy --role-name $ROLE_NAME --policy-arn arn:aws:iam::aws:policy/AmazonEC2RoleforSSM
