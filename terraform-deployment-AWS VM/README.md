@@ -31,7 +31,7 @@ Before proceeding, ensure you have the following:
   
 We begin by specifying the AWS provider in our Terraform configuration. Terraform uses this to understand which cloud resources to provision.
 
-'''bash
+ ```bash
 terraform {
   required_providers {
     aws = {
@@ -40,7 +40,9 @@ terraform {
     }
   }
 }
-'''''
+
+
+
 
 
 
