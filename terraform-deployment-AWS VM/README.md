@@ -61,7 +61,7 @@ resource "aws_vpc" "main" {
 }
 ```
 ### 2. Internet Gateway
-To allow instances within our VPC to access the internet (e.g., for software updates or serving web traffic), we need to attach an Internet Gateway.
+To allow instances within our VPC to access the internet for software updates or serving web traffic, we need to attach an Internet Gateway.
 ```bash
 resource "aws_internet_gateway" "gw" {
   vpc_id = aws_vpc.main.id
